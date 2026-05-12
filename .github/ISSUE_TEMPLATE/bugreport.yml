@@ -54,6 +54,13 @@ body:
       placeholder: |
         ERROR: Unknown interaction
         VoiceboxAPI timeout
+        
+  - type: textarea
+    id: others
+    attributes:
+      label: その他
+      description: その他書きたいことがあったら書いてください。
+      render: shell
 
   - type: dropdown
     id: bot_type
