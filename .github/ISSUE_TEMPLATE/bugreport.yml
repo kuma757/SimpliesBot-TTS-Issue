@@ -1,8 +1,8 @@
 name: Bug Report
 description: SimpliesBot TTS の不具合を報告します
-title: "[Bug]: "
+title: "[バグ]: "
 labels:
-  - bug
+  - バグ
 
 body:
   - type: markdown
@@ -45,30 +45,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: severity
-    attributes:
-      label: 影響度
-      options:
-        - 軽微
-        - 普通
-        - 重大
-        - 致命的
-    validations:
-      required: true
-
-  - type: input
-    id: discord_server
-    attributes:
-      label: サーバーID (任意)
-      placeholder: "123456789012345678"
-
-  - type: input
-    id: channel_id
-    attributes:
-      label: チャンネルID (任意)
-      placeholder: "123456789012345678"
-
   - type: textarea
     id: logs
     attributes:
@@ -84,12 +60,12 @@ body:
     attributes:
       label: 使用ボット
       options:
-        - Main Bot
-        - Sub1
-        - Sub2
-        - Sub3
-        - Sub4
-        - Sub5
+        - SimpliesBot TTS
+        - SimpliesBot TTS Sub1
+        - SimpliesBot TTS Sub2
+        - SimpliesBot TTS Sub3
+        - SimpliesBot TTS Sub4
+        - SimpliesBot TTS Sub5
     validations:
       required: true
 
@@ -98,7 +74,5 @@ body:
     attributes:
       label: 確認事項
       options:
-        - label: 最新状態でも問題が発生しています
-          required: true
         - label: 同様のIssueが存在しないことを確認しました
           required: true
